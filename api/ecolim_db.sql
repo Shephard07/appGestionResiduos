@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS ecolim_db
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE ecolim_db;
+
+CREATE TABLE IF NOT EXISTS residuos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo VARCHAR(50) NOT NULL,
+    cantidad DECIMAL(10,2) NOT NULL,
+    observacion VARCHAR(255),
+    fecha DATETIME NOT NULL,
+    fecha_servidor TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
