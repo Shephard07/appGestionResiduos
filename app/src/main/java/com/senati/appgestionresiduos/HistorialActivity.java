@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class HistorialActivity extends AppCompatActivity {
 
     private static final String URL_API =
-            "http://10.0.2.2/ecolim_api/registrar_residuo.php";
+            "http://192.168.18.47/api/registrar_residuo.php";
 
     private ListView listViewHistorial;
     private TextView tvSinRegistros;
