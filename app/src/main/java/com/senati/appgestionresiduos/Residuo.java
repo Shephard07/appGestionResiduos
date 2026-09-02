@@ -61,6 +61,13 @@ public class Residuo {
 
     @Override
     public String toString() {
-        return tipo + " - " + cantidad + " kg\nFecha: " + fecha;
+        String texto = tipo + " - " + cantidad + " kg"
+                + "\nFecha: " + fecha;
+
+        if (!observacion.isEmpty()) {
+            texto += "\nObservación: " + observacion;
+        }
+
+        return texto;
     }
 }
